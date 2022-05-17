@@ -50,3 +50,15 @@ var twoSumThree = function (nums, target) {
     }
   }
 };
+
+/**
+ * Version 4
+ */
+var twoSum = function (nums, target) {
+  for (let i = 0; i < nums.length; i += 1) {
+    const tempIndex = nums.indexOf(target - nums[i])
+    if (tempIndex !== i && tempIndex !== -1) {
+      return [tempIndex, i];
+    }
+  }
+};
