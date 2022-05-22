@@ -5,7 +5,7 @@
 var hammingWeight = function (n) {
   var count = 0;
   for (i = 0; i < 32; i++) {
-    // 0 & 1 = 0 :: 1 & 1 = 0
+    // 0 & 1 = 0 :: 1 & 1 = 1
     if (n&1) {
       count++;
     }
