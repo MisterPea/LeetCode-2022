@@ -11,9 +11,7 @@ var isPerfectSquare = function (num) {
   let mid = 0;
   let max = num;
   while (min <= max) {
-
     mid = Math.floor((min + max) / 2);
-    console.log(min, mid, max);
     if (mid * mid === num) {
       return true;
     }
